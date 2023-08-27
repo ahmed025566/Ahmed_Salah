@@ -1,34 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
+import Header from "./components/header";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import About from "./components/About";
+import MoreAboutMe from "./components/MoreAboutMe";
+import Contact from "./components/Contact";
 function App() {
-  const [count, setCount] = useState(0)
-
+  useEffect(() => {
+    AOS.init({duration: 1200});
+  })
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-         
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/more-about-me" element={<MoreAboutMe />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
