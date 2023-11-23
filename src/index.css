@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0F0F0F;
+  
 }
 
 code {
@@ -834,16 +835,16 @@ a {
   margin-bottom: 5px;
 }
 
+.conatcWrapper {
+  height: 660px
+}
+
 .contactInfo {
   position: relative;
   width: 30%;
   position: relative;
   left: 120px;
   top: 60px;
-}
-
-.conatcWrapper {
-  height: 650px;
 }
 
 .contactInfoHeader {
@@ -962,4 +963,11 @@ a {
   left: 19px;
   top: 18px;
   font-size: 32px;
+}
+
+.remember {
+  color: white;
+  width: 70%;
+  margin: 100px auto;
+  text-align: center;
 }

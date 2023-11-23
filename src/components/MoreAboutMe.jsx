@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import myPhoto from '../assets/myPhoto1.jpg'
 import { FaLinkedin } from 'react-icons/fa'
 import { BsGithub } from 'react-icons/bs'

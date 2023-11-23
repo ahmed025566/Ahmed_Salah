@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import About from "./components/About";
 import MoreAboutMe from "./components/MoreAboutMe";
 import Contact from "./components/Contact";
+import Works from "./components/Works";
 function App() {
   useEffect(() => {
     AOS.init({duration: 1200});
@@ -19,6 +20,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/more-about-me" element={<MoreAboutMe />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/works" element={<Works />} />
       </Routes>
     </div>
   );
