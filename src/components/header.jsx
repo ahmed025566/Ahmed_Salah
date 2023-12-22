@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import file from "../assets/Ahmed Salah.pdf"
 const Header = () => {
   return (
     <header className='header' data-aos="slide-down">
@@ -11,7 +11,9 @@ const Header = () => {
         <NavLink to="works" className="header-link">Works</NavLink>
         <NavLink to="contact" className="header-link">Contact</NavLink>
       </nav>
-      <button type='button' className='resume'>Resume</button>
+      <form method="get" action={file}>
+        <button type="submit"  className='resume'>Resume</button>
+      </form>
     </header>
   )
 } 

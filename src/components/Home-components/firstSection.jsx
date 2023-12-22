@@ -14,7 +14,7 @@ const FirstSection = () => {
             <div className='info'>
               <p className='role-intro'>A WEB DEVELOPER</p>
               <p className='name'>Ahmed Salah</p>
-              <p className='some-info'>I am a Front-End devloper based in Cairo, Egypt</p>
+              <p className='some-info'>I am a Full-stack devloper based in Egypt</p>
               <NavLink to="About"><BsArrowRightCircleFill className='get-in' /></NavLink>
             </div>
           </div>
