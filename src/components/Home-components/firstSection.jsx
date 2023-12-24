@@ -20,7 +20,7 @@ const FirstSection = () => {
           </div>
         </NavLink>
         <div className='ticker' data-aos="flip-down">
-          <div class="hwrap"><div class="hmove">
+          <div className="hwrap"><div class="hmove">
             <div className='hitem'><span>&#9899;</span>Latest work and futured</div>
             <div className='hitem'><span>&#9899;</span>Latest work and futured</div>
             <div className='hitem'><span>&#9899;</span>Latest work and futured</div>

@@ -159,6 +159,14 @@ const MoreAboutMe = () => {
                         <p className='percentage'>82%</p>
                         postgreSql
                     </p>
+                    <p className='skill' data-aos="zoom-in">
+                        <p className='percentage'>80%</p>
+                        Ruby
+                    </p>
+                    <p className='skill' data-aos="zoom-in">
+                        <p className='percentage'>85%</p>
+                        RubyonRails
+                    </p>
                 </div>
             </div>
             

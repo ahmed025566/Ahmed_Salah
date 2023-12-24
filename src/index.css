@@ -26,6 +26,8 @@ code {
 .logo {
   color: #fff;
   cursor: pointer;
+  position: relative;
+  z-index: 2000;
 }
 
 .navBar {
@@ -553,7 +555,7 @@ a {
   font-size: 40px;
   width: 400px;
   position: relative;
-  top: 25px;
+  top: 5px;
   left: -30px;
 }
 
@@ -563,7 +565,7 @@ a {
   line-height: 22px;
   position: relative;
   left: -30px;
-  top: -10px;
+  top: -20px;
   font-weight: 500;
   font-size: 15px;
 }
@@ -815,8 +817,9 @@ a {
 
 .skillList {
   width: 490px;
-  height: 300px;
+  height: 430px;
   display: flex;
+  margin-bottom: -80px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -970,4 +973,73 @@ a {
   width: 70%;
   margin: 100px auto;
   text-align: center;
+}
+
+.slider {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: -250px;
+  opacity: 0;
+  display: none;
+  z-index: 999;
+  background-color: #0F0F0F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  transition: all 700ms ease-out;
+}
+
+
+.menu-btn {
+  position: absolute;
+  z-index: 3000;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+/* Styling the hamburger lines */
+.menu-btn .btn-line {
+  width: 25px;
+  height: 1px;
+  margin: 0 0 7px 0;
+  background: white;
+  transition: all 0.3s ease-out;
+}
+
+/* Adding transform to the X */
+
+
+/* Styling the three lines 
+  to make it an X */
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    left: 30px;
+  }
+
+  .header-link {
+    width: 30%;
+    text-align: center;
+  }
+
+  .logoLink {
+    display: inline-block;
+   width: 100px;
+  }
 }
