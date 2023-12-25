@@ -101,11 +101,11 @@ const MoreAboutMe = () => {
                             knowledge to help businesses improve their marketing and sales strategies.</li>
                         <li className='item'>
                             In addition to my business knowledge, I have also learned the technical skills necessary to
-                            be a successful front-end developer. I am proficient in HTML, CSS, and JavaScript, and React.
+                            be a successful Full Stack developer. I am proficient in HTML, CSS, and JavaScript, React, Ruby, RubyonRails.
                         </li>
                         <li className='item'>
                             I believe that my combination of business knowledge and technical skills makes me a valuable asset
-                            to any front-end team. I am confident that I can use my skills to help businesses achieve
+                            to any full stack team. I am confident that I can use my skills to help businesses achieve
                             their goals and to create user-friendly and engaging web applications.
                         </li>
                     </ul>
@@ -117,8 +117,8 @@ const MoreAboutMe = () => {
                     <ul className='job description'>
                         <li className='item'>I recently completed a full stack boot camp, where
                             I learned the skills necessary to become a full-stack web developer. I learned the basics
-                            of HTML, CSS, and JavaScript, as well as more advanced topics such as React, Node.js,
-                            and MongoDB. I also learned about the different aspects of web development, such as user
+                            of HTML, CSS, and JavaScript, as well as more advanced topics such as React, Node.js, Ruby, Postgres and RubyonRails
+                            . I also learned about the different aspects of web development, such as user
                             experience design, front-end development, back-end development, and testing.</li>
                         <li className='item'>
                             I am confident that my skills and knowledge from the boot camp will allow me to be successful

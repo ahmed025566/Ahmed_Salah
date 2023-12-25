@@ -1353,6 +1353,11 @@ a {
   margin: 25px 22px -10px 22px;
  }
 
+
+ .more-information-wraper {
+  margin-bottom: 300px;
+ }
+
  .contact-card {
   position: relative;
   top: 80px;
@@ -1407,4 +1412,85 @@ a {
   position: relative;
   top: 0px;
  }
+
+ .detailed-education {
+  width: 95%;
+  left: 2.5%;
+  top: 200px;
+ }
+
+ .skillsDiv {
+  width: 95%;
+  left: 2.5%;
+  top: 210px;
+ }
+
+ #services {
+  width: 88%;
+  position: relative;
+  left: 6%;
+  top: 100px;
+  color: white;
+ }
+
+ .services_icons {
+  width: 100%;
+  height: 370px;
+  background-image: linear-gradient(to bottom right, #252525, #101010);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+ }
+
+ .services_icons_inner {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ #services_icon {
+  font-size: 33px;
+ }
+
+ .services_icons_inner div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .my_offerings_header {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 16%;
+  top: -10px;
+  font-weight: 500;
+ }
+ 
+ #my_offerings {
+  width: 100%;
+  position: relative;
+  height: 780px;
+  background: linear-gradient(120deg, rgba(255,255,255, .105), rgba(255,255,255,0.001));
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .offerDiv {
+  width: 90%;
+  height: 220px;
+  background: linear-gradient(120deg, rgba(255,255,255, .13), rgba(255,255,255,0.01));;
+  border-radius: 20px;
+ }
+
 }
