@@ -15,7 +15,7 @@ const ThirdSection = () => {
                     <p className='description'>Training<br />Hours</p>
                 </div>
                 <div className='numberDiv'>
-                    <p className='number'>+10</p>
+                    <p className='number'>+40</p>
                     <p className='description'>Total<br />Projects</p>
                 </div>
             </div>

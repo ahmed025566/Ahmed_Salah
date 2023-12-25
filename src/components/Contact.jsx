@@ -45,7 +45,7 @@ export default class Contact extends React.Component {
                         </a>
                     </div>
                     <form className='conatctForm' action="https://formspree.io/f/xbjelnrl" method="post">
-                        <h2 className='formHeader'>Let's work <span Name='together'>together</span></h2>
+                        <h2 className='formHeader'>Let's work <span className='together'>together</span></h2>
                         <input type='text' name="user_name" placeholder='Name *' className='formItem' required></input>
                         <input type="email" name="user_mail" placeholder='Email *' className='formItem' required></input>
                         <input type='text' name="user_message" placeholder='Your Subject *' className='formItem' required></input>

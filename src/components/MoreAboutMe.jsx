@@ -6,19 +6,22 @@ import { NavLink } from 'react-router-dom'
 import Footer from './Home-components/Footer'
 
 export const scrollFunction = (card) => {
-    if (window.scrollY >= 2200 && card !== undefined) { 
+    if (window.scrollY >= 2080 && card !== undefined) { 
         card.classList.add('endOfScroll')
     }
-    if (window.scrollY < 2200 && card !== undefined) {      
+    if (window.scrollY < 2080 && card !== undefined) {      
         card.classList.remove('endOfScroll')
-        card.classList.add('scroll')            
+        card.classList.add('scroll')
     }
 }
 
 const MoreAboutMe = () => {
     const card = useRef()
     const wraper = useRef()
-    window.addEventListener('scroll', () => {scrollFunction(card.current)})
+    if(window.innerWidth >= 768) {
+        window.addEventListener('scroll', () => {scrollFunction(card.current)})
+    }
+   
     return (
         <>
         <div className='more-information-wraper' ref={wraper}>
@@ -54,8 +57,8 @@ const MoreAboutMe = () => {
                 <p className='experienceHeader' data-aos="zoom-in-left" data-aos-duration="400" data-aos-offset="100">
                     Experience</p>
                 <div className='Div' data-aos="zoom-in-left">
-                    <p className='duration' id="more">2022 - 2023</p>
-                    <p className='frstRole'>Front-End Developer</p>
+                    <p className='duration' id="more">Dec 2022 - Present</p>
+                    <p className='frstRole'>Full Stack Developer</p>
                     <p className='entity more' >Microverse</p>
                     <ul className='job description'>
                         <li className='item'>Developed and maintained user interfaces for a variety of web applications using HTML, CSS, Vanilla JavaScript, and React.</li>
@@ -63,11 +66,16 @@ const MoreAboutMe = () => {
                         <li className='item'>Integrated interfaces with back-end systems using RESTful APIs.</li>
                         <li className='item'>Implemented responsive design and cross-browser compatibility.</li>
                         <li className='item'>Tested and debugged interfaces using automated and manual testing.</li>
+                        <li className='item'>Developed and maintained server-side logic and databases for web applications using Ruby and RubyonRails</li>
+                        <li className='item'>Collaborated with the front-end team to design and implement efficient and scalable APIs that interact with the client-side application.</li>
+                        <li className='item'>Integrated backend systems with third-party services and APIs to enhance application functionality.</li>
+                        <li className='item'>Ensured the security and integrity of data by implementing authentication, authorization, and data validation mechanisms.</li>
+                        <li className='item'>Optimized database queries and server performance to improve the overall application responsiveness.</li>
                     </ul>
                 </div>
                 <div className='experieceDiv' data-aos="zoom-in-left">
-                    <p className='duration' id="more">2022 - 2023</p>
-                    <p className='frstRole'> Mentor For Junior Developers </p>
+                    <p className='duration' id="more">Dec 2022 - Dec 2023</p>
+                    <p className='frstRole'> Mentor For Junior Front-end Developers </p>
                     <p className='entity more' >Microverse</p>
                     <ul className='job description'>
                         <li className='item'>Mentored junior developers on a variety of topics, including HTML, CSS, JavaScript, and React,</li>
@@ -169,7 +177,6 @@ const MoreAboutMe = () => {
                     </p>
                 </div>
             </div>
-            
         </div>
         <Footer />
         </>

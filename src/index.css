@@ -130,7 +130,7 @@ a {
 }
 
 .ticker {
-  width: 550px;
+  width: 580px;
   height: 50px;
   margin: 65px 0 0 20px;
   border-radius: 30px;
@@ -151,7 +151,6 @@ a {
 
 .hmove { 
   display: flex;
-  
 }
 .hitem {
   flex-shrink: 0;
@@ -179,7 +178,7 @@ a {
   background-image: linear-gradient(to bottom right, #252525, #111111);
   position: absolute;
   top: 280px;
-  right: 360px;
+  right: 410px;
 }
 
 .show-them-projects {
@@ -189,7 +188,7 @@ a {
   background-image: linear-gradient(to bottom right, #252525, #111111);
   position: absolute;
   top: 280px;
-  right: 75px;
+  right: 100px;
 }
 
 .signuture {
@@ -348,7 +347,7 @@ a {
 }
 
 .profiles {
-  width: 300px;
+  width: 280px;
   height: 240px;
   background-image: linear-gradient(to bottom right, #212121, #111111);
   border-radius: 30px;
@@ -556,7 +555,7 @@ a {
   width: 400px;
   position: relative;
   top: 5px;
-  left: -30px;
+  left: 40px;
 }
 
 .about-paragraph {
@@ -564,7 +563,7 @@ a {
   width: 650px;
   line-height: 22px;
   position: relative;
-  left: -30px;
+  left: 40px;
   top: -20px;
   font-weight: 500;
   font-size: 15px;
@@ -762,7 +761,6 @@ a {
 
 .Div {
   width: 100%;
-
 }
 
 #more {
@@ -1040,6 +1038,373 @@ a {
 
   .logoLink {
     display: inline-block;
-   width: 100px;
+    width: 100px;
   }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .first-section {
+    margin-top: 60px;
+    padding: 0;
+    display: block;
+  }
+  .about-me {
+    width: 95%;
+    height: 430px;
+    margin: 0 auto;
+   
+  }
+
+  .photo {
+    position: relative;
+    top: -60px;
+    left: 23.5%;
+  }
+
+ .role-intro {
+   position: relative;
+   top: 160px;
+   left: -140px;
+   font-size: 20px;
+   font-weight: 500;
+  }
+
+  .name {
+    position: relative;
+    top: 150px;
+    left: -140px;
+    font-size: 43px;    
+    width: 350px;
+  }
+
+  .some-info {
+    position: relative;
+    width: 300px;
+    top: 130px;
+    left: -145px;
+  }
+
+  .get-in {
+    top: 92.4px;
+    left: 165px;
+  }
+
+  
+  .ticker {
+   margin: 20px auto;
+   width: 95%;
+  }
+
+  .hwrap {
+    width: 95%;
+  }
+
+  .more-about-me {
+    position: relative;
+    top: 0px;
+    left: 10px;
+    width: 95%;
+  }
+
+  #get-in {
+    left: 380px;
+  }
+
+  .show-them-projects {
+    position: relative;
+    top: 0;
+    left: 10px;
+    width: 95%;
+  }
+
+  #my-works {
+    margin: 20px 0 0 130px;
+  }
+
+  #sample {
+    width: 40%;
+    margin: 0px 30%;
+  }
+
+  #show-case {
+    top: -2px;
+  }
+
+  #projects {
+    top: -30px;
+  }
+
+  #projects-link {
+    left: 380px;
+    top: -80px;
+  }
+
+
+  #second-section {
+    width: 95%;
+    display: block;
+  }
+
+  #BlogLink {
+    width: 100%;
+    position: relative;
+    top: 15px;
+  }
+
+  #blog {
+    width: 100%;
+  }
+
+  #blogLogo {
+    left: 36%;
+  }
+
+  #BLOG {
+    top: 50px;
+  }
+
+  #AFonts {
+    top: 30px;
+  }
+
+  #blog-link {
+    top: -20px;
+    left: 380px;
+  }
+
+  .services {
+    position: relative;
+    top: 38px;
+    width: 100%;
+  }
+
+  #offers {
+    left: 380px;
+    top: 42px;
+  }
+
+  .profiles {
+    width: 100%;
+    position: relative;
+    top: 60px;
+  }
+
+  .innerDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stay-with-me {
+    top: 10px;
+  }
+
+  #para-profiles {
+    top: -13px;
+  }
+
+  #get-to-profiles {
+    left: 380px;
+    top: -65px;
+  }
+
+  .thirdSection {
+    display: block;
+    width: 95%;
+    margin-bottom: 100px;
+  }
+
+  .some-statistics {
+    position: relative;
+    top: 60px;
+    width: 94.5%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .numberDiv {
+    width: 185px;
+  }
+
+  .collaboration {
+    position: relative;
+    top: 85px;
+    width: 100%;
+  }
+
+  #star-togather {
+    top: -60px;
+    left: 29px;
+  }
+
+  .let_us_work {
+    font-size: 44px;
+  }
+
+  .logo_bottom {
+    left: 0;
+  }
+
+  .name_blue {
+    color: #5b78f6;
+  }
+
+  .about-first-section {
+    display: block;
+    width: 95%;
+  }
+
+  .about-image {
+    width: 85%;
+    margin: auto;
+  }
+
+  .short-summary {
+    position: relative;
+    top: 30px;
+  }
+
+ .self-summary {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+ }
+
+ .summary-text {
+  width: 100%;
+  position: relative;
+  top: 10px;
+  height: 280px;
+  }
+
+ #line_self_summary {
+  display: none;
+ }
+
+ #name {
+  left: 30px;
+ }
+ .about-paragraph {
+  width: 88%;
+  left: 30px;
+ }
+ 
+ .about-second-section {
+  display: block;
+  width: 95%;
+ }
+
+ .experience {
+  position: relative;
+  top: 355px;
+  width: 100%;
+ }
+
+ .education {
+  width: 100%;
+  position: relative;
+  top: 355px;
+ }
+
+ .about-third-section {
+  display: block;
+  width: 95%;
+  position: relative;
+  top: 305px;
+  margin-bottom: 420px;
+ }
+
+ #more-about {
+  top: 110px;
+  width: 100%;
+ }
+
+ .conatcWrapper {
+  margin-bottom: 535px;
+
+ }
+
+ .contactInfo {
+   width: 100%;
+   left: 20px;
+ }
+
+ .socialInfo {
+  width: 100%;
+  left: 20px;
+  top: 60px;
+ }
+
+ .conatctForm {
+   width: 95%;
+   left: 0;
+   top: 75px;
+   margin: auto;
+ }
+
+ .formItem {
+  margin: 25px 22px -10px 22px;
+ }
+
+ .contact-card {
+  position: relative;
+  top: 80px;
+  width: 93%;
+  left: 3.5%;
+  height: 760px;
+ }
+
+ .more-photo {
+  height: 480px;
+  width: 90%;
+  margin: 0;
+  position: relative;
+  top: 25px;
+  left: 5%;
+ }
+
+ #cardName {
+  top: 50px;
+  left: 20%;
+ }
+
+ .userName {
+  top: 40px;
+  left: 160px;
+ }
+
+ .cardCircle {
+  top: 30px;
+  left: 130px;
+ }
+
+ .contactMe {
+  height: 50px;
+  border-radius: 18px;
+  top: 50px;
+ }
+
+ #aboutMePara {
+  width: 95%;
+  left: 2.5%;
+  top: 100px;
+ }
+
+ .detailed-experience {
+  width: 95%;
+  left: 2.5%;
+  top: 150px;
+ }
+
+ .Div {
+  position: relative;
+  top: 0px;
+ }
 }

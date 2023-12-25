@@ -11,7 +11,7 @@ import { BsGithub } from 'react-icons/bs'
 const SecondSection = () => {
     return (
         <section id="second-section">
-            <NavLink to="blog">
+            <NavLink id="BlogLink" to="blog">
                 <div id="blog" data-aos="zoom-in">
                     <img src={blogLogo} alt="blog-logo" id="blogLogo" />
                     <p id="BLOG">BLOG</p>
@@ -19,7 +19,7 @@ const SecondSection = () => {
                     <BsArrowRightCircleFill className='get-in' id="blog-link" />
                 </div>
             </NavLink>
-            <NavLink to="services">
+            <NavLink  to="services">
                 <div className='services' data-aos="zoom-in">
                     <div className='icons'>
                         <BsCodeSlash className='code' />
