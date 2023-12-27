@@ -36,9 +36,9 @@ const SecondSection = () => {
     )
 }
 
-export const Profils = () => {
+export const Profils = ({id, getin_services}) => {
     return (
-        <div className='profiles' data-aos="zoom-in">
+        <div className='profiles' id={id} data-aos="zoom-in">
             <div className="innerDiv">
                 <a href="https://www.linkedin.com/in/ahmed-salah-elkholy/" target='_blank' rel="noreferrer" className='circle'>
                     <FaLinkedin className='linked-in' />
@@ -49,7 +49,7 @@ export const Profils = () => {
             </div>
             <p className='stay-with-me'>Stay With me</p>
             <p id="para-profiles">Profiles</p>
-            <NavLink to="/contact"><BsArrowRightCircleFill className='get-in' id="get-to-profiles" /></NavLink>
+            <NavLink to="/contact"><BsArrowRightCircleFill className='get-in' id='get-to-profiles' style={{left: getin_services}} /></NavLink>
         </div>
     )
 }

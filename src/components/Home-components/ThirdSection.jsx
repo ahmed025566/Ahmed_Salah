@@ -19,17 +19,17 @@ const ThirdSection = () => {
                     <p className='description'>Total<br />Projects</p>
                 </div>
             </div>
-            <Collaboration />
+            <Collaboration position="relative" />
         </section>
     )
 }
 
-export const Collaboration = () => {
+export const Collaboration = ({left, top, topServices, leftServices, width, position}) => {
     return (
-        <NavLink to="/contact">
+        <NavLink to="/contact" style={{position: position, top: topServices, left: leftServices, width: width}}>
                 <div className='collaboration' data-aos="zoom-in">
                     <div className='line' id="togather"></div>
-                    <span id="star-togather">&#10022;</span>
+                    <span id="star-togather" style={{left: left, top: top}}>&#10022;</span>
                     <p className='let_us_work'>Let's<br />Work <span className='together'>together</span></p>
                     <BsArrowRightCircleFill className='get-in' id="collaborate" />
                 </div>

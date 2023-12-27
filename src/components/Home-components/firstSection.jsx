@@ -47,13 +47,13 @@ const FirstSection = () => {
   )
 }
 
-export const MoreAbout = ({id}) => {
+export const MoreAbout = ({ id, top, width, left, GetInLeft }) => {
   return (
-    <NavLink to="/more-about-me" ><div className="more-about-me" data-aos="zoom-in" id={id}>
+    <NavLink to="/more-about-me"><div className="more-about-me" style={{top: top, width: width, left: left}} data-aos="zoom-in" id={id}>
           <img src={sign} alt='sign' className='signuture' />
           <p className='moreAboutMe'>More About Me</p>
           <p className='credentials'>Credentials</p>
-          <BsArrowRightCircleFill className='get-in' id='get-in' />
+          <BsArrowRightCircleFill className='get-in' style={{left: GetInLeft}} id='get-in' />
         </div></NavLink>
   )
 }

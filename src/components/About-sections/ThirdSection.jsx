@@ -7,7 +7,7 @@ const ThirdSection = () => {
   return (
     <section className='about-third-section'>
       <Profils />
-      <Collaboration />
+      <Collaboration position="relative" />
       <MoreAbout id="more-about"/>
     </section>
   )

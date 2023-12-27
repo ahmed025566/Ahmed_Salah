@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-const Footer = () => {
+
+const Footer = ({ top, marginTop, left }) => {
   const year = new Date().getFullYear();
   return (
-    <footer className='footer'>
+    <footer className='footer' style={{position: 'relative', top: top, marginTop: marginTop, left: left}}>
         <h1 className='logo logo_bottom'>Ahmed</h1>
         <nav className='navBar' id='navFooter'>
         <NavLink to="/" className="header-link">Home</NavLink>

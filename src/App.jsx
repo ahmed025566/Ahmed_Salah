@@ -9,7 +9,10 @@ import About from "./components/About";
 import MoreAboutMe from "./components/MoreAboutMe";
 import Contact from "./components/Contact";
 import Works from "./components/Works";
-import Services from "./Services";
+import Services from "./components/Services";
+import Grow from "./components/Grow";
+import EarthEstates from "./components/EarthEstates";
+import Lumina from "./components/Lumina";
 
 
 function App() {
@@ -59,6 +62,9 @@ function App() {
         <Route path="/more-about-me" element={<MoreAboutMe />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/works" element={<Works />} />
+        <Route path="/works/Grow" element={<Grow />} />
+        <Route path="/works/EarthEstates" element={<EarthEstates />} />
+        <Route path="/works/Lumina" element={<Lumina />} />
         <Route path="/services" element={<Services />} />
       </Routes>
     </div>

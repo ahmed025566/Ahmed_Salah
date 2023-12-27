@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0F0F0F;
-  
+  overflow-x: hidden;
 }
 
 code {
@@ -636,7 +636,7 @@ a {
 #star-togather {
   position: relative;
   top: -55px;
-  left: 23.9px;
+  left: 19.6px;
   color: #979797;
   font-size: 50px;
 }
@@ -891,7 +891,7 @@ a {
 
 .conatctForm {
   width: 52%;
-  height: 530px;
+  height: 550px;
   background-image: linear-gradient(to bottom right, #1e1e1e, #121212);
   border-radius: 30px;
   position: relative;
@@ -930,6 +930,23 @@ a {
   cursor: pointer;
   transition: all 1s;
 }
+
+.succesfulMessage, .errorMessage {
+  width: 86%;
+  position: relative;
+  border: 2px solid rgb(56, 136, 56);
+  left: 7%;
+  color: #BCBCBC;
+  text-align: center;
+  height: 24px;
+  border-radius: 5px;
+}
+
+.errorMessage {
+  border-color: orange;
+}
+
+
 
 .submit:hover {
   background-image: linear-gradient(#fff, #fff);
@@ -1040,6 +1057,311 @@ a {
     display: inline-block;
     width: 100px;
   }
+}
+
+
+
+#services {
+  width: 88%;
+  position: relative;
+  left: 6%;
+  top: 100px;
+  color: white;
+ }
+
+.my_offerings_header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-weight: 500;
+  font-size: 100px;
+  top: -845px;
+  right: -40%;
+ }
+
+ #my_offerings {
+  width: 67%;
+  position: relative;
+  height: 600px;
+  background: linear-gradient(120deg, rgba(255,255,255, .105), rgba(255,255,255,0.001));
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  top: -935px;
+  left: 35%;
+ }
+
+ .offerDiv {
+  height: 260px;
+  background: linear-gradient(120deg, rgba(255,255,255, .13), rgba(255,255,255,0.01));;
+  border-radius: 20px;
+  width: 47%;
+ }
+
+ .skillheader {
+  color: #b6b6b6;
+  font-weight: 600;
+  position: relative;
+  left: 15px;
+ }
+
+ .skillDescription {
+  font-size: 15px;
+  position: relative;
+  top: -5px;
+  color: #e2e2e2;
+  font-weight: 600;
+  width: 91%;
+  left: 4.5%;
+ }
+
+ .services_icons {
+  width: 30%;
+  height: 720px;
+  background-image: linear-gradient(to bottom right, #252525, #101010);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  position: relative;
+  left: 30px;
+ }
+
+ .services_icons_inner {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .services_icons_inner div {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+ 
+ #servicesProfiles {
+  position: relative;
+  top: -900px;
+  left: 30px;
+ }
+
+
+ .works {
+  width: 80%;
+ }
+
+ .worksHeader {
+  color: white;
+  font-size: 33px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 66px;
+  position: relative;
+  left: 31%;
+ }
+
+
+ .workCard {
+  border-radius: 25px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .13), rgba(255, 255, 255, 0));
+  width: 370px;
+  height: 340px;
+}
+
+ #firstCard{
+  position: relative;
+  top: -130px;
+  left: 100px;
+ }
+
+ #secondCard {
+  position: relative;
+  left: 500px;
+ }
+
+ #thirdCard {
+  position: relative;
+  left: 900px;
+ }
+
+ .growshot {
+  width: 95%;
+  border-radius: 15px;
+  position: relative;
+  top: 20px;
+  height: 60%;
+  left: 2.5%;
+ }
+
+ .stack {
+  color: #BCBCBC;
+  font-weight: 500;
+  font-size: 25px;
+  position: relative;
+  left: 20px;
+ }
+
+ .projectName {
+  position: relative;
+  left: 20px;
+  top: -34px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+ }
+
+
+ .main-focus {
+  color: #BCBCBC;
+  font-weight: 500;
+  position: relative;
+  top: 50px;
+  left: 100px;
+ }
+
+ .title {
+  position: relative;
+  top: 10px;
+  color: whitesmoke;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+ }
+
+ .projectImage {
+  width: 95%;
+  position: relative;
+  left: 3%;
+  top: -10px;
+  border-radius: 20px;
+ }
+
+ 
+ .projectDescription {
+  width: 95%;
+  height: 455px;
+  position: relative;
+  left: 2.5%;
+  top: 40px;
+  margin-bottom: 150px;
+  border-radius: 20px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .12), rgba(255, 255, 255, .01));
+ }
+
+ .projectMetaData {
+    width: 40%;
+    position: relative;
+    left: 4%;
+    top: 5%;
+    height: 410px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, .12), rgba(255, 255, 255, .01));
+    border-radius: 25px;
+ }
+
+ .information {
+  position: relative;
+  left: 60px;
+  height: 60px;
+  top: -10px;
+ }
+
+ .question {
+  color: #a8a8a8;
+  font-size: 22px;
+ }
+
+ .answer {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  top: -17px;
+ }
+
+ .descriptionDiv {
+  width: 45%;
+  position: relative;
+  left: 50%;
+  top: -82%;
+  height: 410px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .12), rgba(255, 255, 255, .01));
+  border-radius: 25px;
+ }
+
+ .descriptionPara {
+  position: relative;
+  top: 30px;
+  width: 88%;
+  left: 6%;
+  font-weight: 600;
+  color: #BCBCBC;
+ }
+
+ .screenshot {
+  width: 95%;
+  border-radius: 20px;
+  position: relative;
+  top: -70px;
+  left: 2.5%;
+  margin-bottom: 18px;
+ }
+
+ .projectLink {
+  position: relative;
+  top: -40px;
+  width: 20%;
+  left: 28%;
+  height: 80px;
+  display: inline-block;
+  color: white;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .20), rgba(255, 255, 255, .00));
+  border-radius: 25px;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  transition: all .3s ease-in-out;
+
+ }
+
+ .nextButton {
+  width: 30%;
+  position: relative;
+  left: 33%;
+  height: 90px;
+  border-radius: 26px;
+  top: -16px;
+  margin-bottom: -30px;
+  color: white;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .20), rgba(255, 255, 255, .00));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+ }
+
+ .projectLink:hover {
+  color: black;
+  background-color: white;
+ }
+.nextButton:hover {
+  color: black;
+  background-color: white;
 }
 
 
@@ -1425,72 +1747,202 @@ a {
   top: 210px;
  }
 
- #services {
-  width: 88%;
-  position: relative;
-  left: 6%;
-  top: 100px;
-  color: white;
- }
 
  .services_icons {
   width: 100%;
   height: 370px;
-  background-image: linear-gradient(to bottom right, #252525, #101010);
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 23px;
+  left: 0;
  }
 
  .services_icons_inner {
   width: 50%;
-  height: 90%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
+ }
+
+
+ .services_icons_inner div {
+  width: 100%;
  }
 
  #services_icon {
   font-size: 33px;
  }
 
- .services_icons_inner div {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- }
+
 
  .my_offerings_header {
   font-size: 30px;
-  display: flex;
-  align-items: center;
-  position: relative;
   left: 16%;
   top: -10px;
-  font-weight: 500;
  }
- 
+
+
  #my_offerings {
   width: 100%;
-  position: relative;
-  height: 780px;
-  background: linear-gradient(120deg, rgba(255,255,255, .105), rgba(255,255,255,0.001));
-  border-radius: 15px;
-  display: flex;
+  height: 920px;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  top: 0;
+  left: 0;
  }
+ 
 
  .offerDiv {
   width: 90%;
-  height: 220px;
-  background: linear-gradient(120deg, rgba(255,255,255, .13), rgba(255,255,255,0.01));;
-  border-radius: 20px;
+  height: 270px;
  }
 
+ .skillheader {
+  left: 15px;
+ }
+
+ #servicesProfiles {
+  top: 25px;
+  left: 0;
+ }
+
+ .works {
+  width: 95%;
+  position: relative;
+  text-align: center;
+  left: 2.5%;
+  top: 55px;
+ }
+
+ .worksHeader {
+  font-size: 33px;
+  left: 0;
+ }
+
+ .workCard {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+ }
+
+ #firstCard{
+  position: relative;
+  top: 0px;
+  left: 0;
+ }
+
+
+ #secondCard {
+  top: 0px;
+  left: 0px;
+ }
+
+ #thirdCard {
+  top: 0px;
+  left: 0px;
+ }
+
+ .growshot {
+  width: 95%;
+  border-radius: 15px;
+  position: relative;
+  top: 20px;
+  height: 60%;
+  left: 0;
+ }
+
+ .projectDiv {
+  position: relative;
+  left: 10px
+ }
+
+ .stack {
+  left: -140px;
+ }
+
+ .projectName {
+  left: -160px;
+ }
+
+ .main-focus {
+  left: 30px;
+ }
+
+ .title {
+  top: 60px;
+  font-size: 18px;
+ }
+
+ .projectImage {
+  top: 70px;
+ }
+
+ .projectDescription {
+  height: 950px;
+  margin-bottom: 0;
+  top: 100px;
+
+ }
+
+ .projectMetaData {
+    width: 92%;
+    position: relative;
+    left: 4%;
+    top: 5%;
+    height: 410px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, .12), rgba(255, 255, 255, .01));
+    border-radius: 25px;
+ }
+
+ .information {
+  position: relative;
+  left: 60px;
+  height: 60px;
+  top: -10px;
+ }
+
+ .question {
+  color: #a8a8a8;
+  font-size: 22px;
+ }
+
+ .answer {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  top: -17px;
+ }
+
+ .descriptionDiv {
+  width: 100%;
+  left: 0%;
+  top: 0;
+  height: 410px;
+  background: none;
+  border-radius: none'
+ }
+
+ .descriptionPara {
+  color: white;
+  position: relative;
+  top: 80px;
+  width: 88%;
+  left: 6%;
+  font-weight: 600;
+  color: #BCBCBC;
+ }
+ 
+ .screenshot {
+  top: 120px;
+ }
+
+ .nextButton {
+  width: 52%;
+  left: 24%;
+  top: 166px;
+  margin-bottom: 150px;
+  font-size: 25px;
+ }
+
+ .projectLink {
+  top: 130px;
+  width: 40%;
+  left: 8%;
+  font-size: 22px;
+ }
 }
+
