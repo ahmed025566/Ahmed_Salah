@@ -13,8 +13,7 @@ import Services from './components/Services';
 import Grow from './components/Grow';
 import EarthEstates from './components/EarthEstates';
 import Lumina from './components/Lumina';
-import Header from './components/Header';
-
+import DesktopHeader from './components/DesktopHeader';
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1200 });
@@ -53,7 +52,7 @@ function App() {
 
   return (
     <div className="App">
-      {window.innerWidth <= 768 ? <MobileHeader /> : <Header />}
+      {window.innerWidth <= 768 ? <MobileHeader /> : <DesktopHeader />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
