@@ -85,6 +85,7 @@ const Contact = () => {
         <form className="conatctForm" onSubmit={handleSubmit}>
           <h2 className="formHeader">
             Let's work
+            {' '}
             <span className="together">together</span>
           </h2>
           <input type="text" ref={Name} name="user_name" placeholder="Name *" className="formItem" required />

@@ -50,6 +50,7 @@ export const Collaboration = ({
         Let's
         <br />
         Work
+        {' '}
         <span className="together">together</span>
       </p>
       <BsArrowRightCircleFill className="get-in" id="collaborate" />
