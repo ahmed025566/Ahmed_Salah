@@ -6,14 +6,18 @@ import image3 from '../assets/grow/Lumina3.png';
 import image4 from '../assets/grow/Lumina4.png';
 import image5 from '../assets/grow/Lumina5.png';
 
-const Lumina = () => (
-  <>
+const Lumina = () => {
+  const width = window.innerWidth <= 768;
+
+
+  return(
+    <>
     <Project
       projectName="Lumina"
       stack="Full Stack"
       title="Capture Life's Moments with Lumina – Where Inspiration Meets Expression!"
       img={image1}
-      top="80px"
+      top={width ? '85px' : '30px'}
       topLumina="-20px"
       description="Lumina stands as an immersive Instagram clone that skillfully captures the essence
         of the popular social media platform, offering users a dynamic and engaging space to express
@@ -34,6 +38,8 @@ const Lumina = () => (
       link="https://lumina-woo4.onrender.com/"
     />
   </>
-);
+  )
+  
+};
 
 export default Lumina;

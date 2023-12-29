@@ -49,8 +49,8 @@ export const Collaboration = ({
       <p className="let_us_work">
         Let's
         <br />
-        Work
-        {' '}
+        Work{' '}
+         
         <span className="together">together</span>
       </p>
       <BsArrowRightCircleFill className="get-in" id="collaborate" />

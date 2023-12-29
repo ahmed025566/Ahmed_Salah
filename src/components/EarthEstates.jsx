@@ -6,8 +6,11 @@ import image3 from '../assets/grow/Earthestates3.png';
 import image4 from '../assets/grow/Earthestates4.png';
 import image5 from '../assets/grow/Earthestates5.png';
 
-const EarthEstates = () => (
-  <>
+const EarthEstates = () => {
+  const width = window.innerWidth <= 768;
+
+  return(
+    <>
     <Project
       projectName="EarthEstaes"
       stack="Full Stack"
@@ -32,9 +35,12 @@ const EarthEstates = () => (
       next="Lumina"
       repo="https://github.com/ahmed025566/EarthEstates"
       link="https://earthestates.onrender.com"
-      top="85px"
+      top={width ? '85px' : '30px'}
     />
   </>
-);
+  )
+};
+ 
+
 
 export default EarthEstates;
