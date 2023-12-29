@@ -1,6 +1,6 @@
 import React from 'react';
-import { LuStars } from 'react-icons/lu';
 import myPicture from '../../assets/myPhoto1.jpg';
+import star from '../../assets/star-2.png'
 
 const FirstSection = () => (
   <section className="about-first-section">
@@ -9,11 +9,11 @@ const FirstSection = () => (
     </div>
     <div className="short-summary" data-aos="zoom-out">
       <h2 className="self-summary">
-        <LuStars className="star" />
+        <img src={star} alt="star" />
         {' '}
         Self-Summary
         {' '}
-        <LuStars className="star" />
+        <img src={star} alt="star" />
       </h2>
       <div className="summary-text">
         <div id="line_self_summary" className="line">

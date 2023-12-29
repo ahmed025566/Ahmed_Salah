@@ -1,9 +1,9 @@
 import React from 'react';
-import { LuStars } from 'react-icons/lu';
 import { Link } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import { MdOutlineRadar } from 'react-icons/md';
 import Footer from './Home-components/Footer';
+import star from '../assets/star-2.png'
 
 const Project = ({
   mainFocus, title, img, top, topLumina, projectName, stack, intro, description, image1, image2, image3, image4, repo, link, next,
@@ -14,14 +14,14 @@ const Project = ({
     <div className="projectDiv">
       <p className="main-focus">{mainFocus}</p>
       <p className="title">
-        <LuStars className="star" />
+        <img src={star} alt="star" />
         <span style={{ textAlign: 'center' }}>
           {' '}
           {title}
           {' '}
         </span>
         {' '}
-        <LuStars className="star" />
+        <img src={star} alt="star" />
       </p>
       <img src={img} alt="Grow scrren shot" className="projectImage" />
       <div className="projectDescription">

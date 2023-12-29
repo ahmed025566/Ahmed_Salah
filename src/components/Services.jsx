@@ -1,8 +1,7 @@
 import React from 'react';
 import { BsCodeSlash } from 'react-icons/bs';
 import { IoLogoDesignernews, IoMdAnalytics } from 'react-icons/io';
-
-import { LuStars } from 'react-icons/lu';
+import star from '../assets/star-2.png'
 import { Profils } from './Home-components/SecondSection';
 import { Collaboration } from './Home-components/ThirdSection';
 import { MoreAbout } from './Home-components/firstSection';
@@ -30,11 +29,11 @@ const Services = () => {
         </div>
       </div>
       <p className="my_offerings_header" data-aos="zoom-in-right">
-        <LuStars className="star" />
+        <img src={star} alt="star" />
         {' '}
         My Offerings
         {' '}
-        <LuStars className="star" />
+        <img src={star} alt="star" />
       </p>
 
       <div id="my_offerings" data-aos="zoom-out">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { LuStars } from 'react-icons/lu';
+import star from '../assets/star-2.png'
 import { Link } from 'react-router-dom';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import Footer from './Home-components/Footer';
@@ -13,10 +13,11 @@ const Works = () => {
   return (
     <div className="works">
       <p className="worksHeader" data-aos="fade-up-left">
-        <LuStars className="star" />
+      <img src={star} alt="star" />
+
         Highlighted Projects
         {' '}
-        <LuStars className="star" />
+        <img src={star} alt="star" />
       </p>
       <WorkCard img={GrowShot} stack="Front-End" projectName="Grow" id="firstCard" />
       <WorkCard img={EarthEstates} stack="Full Stack" projectName="EarthEstates" top={width ? '' : '-390px'} left={width ? '-110px' : ''} id="secondCard" />
