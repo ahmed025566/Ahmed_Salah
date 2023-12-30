@@ -19,6 +19,7 @@ const Footer = ({ top, marginTop, left }) => {
       </nav>
       <p className="allRights">
         &#169; all rights reserved by
+        {' '}
         <span className="name_blue">Ahmed</span>
         {' '}
         {year}

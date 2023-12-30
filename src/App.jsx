@@ -14,6 +14,8 @@ import Grow from './components/Grow';
 import EarthEstates from './components/EarthEstates';
 import Lumina from './components/Lumina';
 import DesktopHeader from './components/DesktopHeader';
+import Blog from './components/Blog'
+
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1200 });
@@ -63,6 +65,7 @@ function App() {
         <Route path="/works/EarthEstates" element={<EarthEstates />} />
         <Route path="/works/Lumina" element={<Lumina />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   );
