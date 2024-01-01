@@ -1449,6 +1449,7 @@ a {
 
 .recent_comments {
   top: 605px;
+  height: 225px;
 }
 
 .noComments {
@@ -1456,19 +1457,19 @@ a {
   font-weight: 500;
   position: relative;
   left: 80px;
-  top: 90px;
+  top: 40px;
 }
 
 .commentsDiv {
   width: 80%;
   position: relative;
-  top: 5px;
+  top: -10px;
   left: 30px;
   height: 70%;
 }
 
 .archives {
-  top: 960px;
+  top: 855px;
   height: 160px;
 }
 
@@ -1476,18 +1477,18 @@ a {
   color: rgb(233, 233, 233);
   font-weight: 500;
   position: relative;
-  left: 100px;
   top: -6px;
   font-size: 20px;
+  text-align: center;
 }
 
-.category {
-  top: 1140px;
+
+.category { 
+  top: 1035px;
   height: 160px;
 }
 
 .category_para {
-  left: 90px;
   top: -10px;
 }
 
@@ -1522,13 +1523,14 @@ a {
 
 .commentForm {
   width: 680px;
-  height: 600px;
+  height: auto;
   position: relative;
   top: 70px;
   left: 120px;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, .13), rgba(255, 255, 255, 0));
   border-radius: 30px;
-  margin-bottom: 100px;
+  padding-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .commentsCounter, .leaveComment {
@@ -1579,6 +1581,56 @@ a {
   background: white;
   color: black;
 
+}
+
+.recentCommentItem {
+  color: #e2e2e2;
+  position: relative;
+  left: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.commentDiv {
+  height: 170px;
+  width: 65%;
+  position: relative;
+  left: 40px;
+  top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeHolder {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.commentData {
+  width: 70%;
+}
+
+.commentDate {
+  color: #5b78f6;
+  font-weight: 600;
+  font-size: 17px;
+  
+}
+
+.commentor {
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 20px;
+ 
+}
+
+.commentBody {
+  color: #BCBCBC;
+  width: 100%;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 480px) {
