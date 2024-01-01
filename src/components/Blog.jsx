@@ -83,39 +83,14 @@ const Blog = () => {
     <>
       <p className='intro'>{category} - {post.title}</p>
       <h1 className='postTitle'>
-        <img src={star} alt="star" />
+        <img src={star} alt="star" className='star' />
         {post.title}
-        <img src={star} alt="star" />
+        <img src={star} alt="star" className='star' />
       </h1>
       <img src={images[postIndex]} alt="post image" className='post_image' />
-      <div className='recent_posts'>
-        <p className='recent_posts_header'>Recent Posts</p>
-        <p className='post_link' onClick={() => setPostIndex(2)} style={{color: postIndex == 2 ? 'white' : '', fontSize: postIndex == 2 ? "20px" : ""}}>The Evolution of Frontend Development</p>
-        <p className='post_link' onClick={() => setPostIndex(3)} style={{color: postIndex == 3 ? 'white' : '', fontSize: postIndex == 3 ? "20px" : ""}}>The Power of Progressive Web Apps</p>
-        <p className='post_link' onClick={() => setPostIndex(4)} style={{border: 'none', color: postIndex == 4 ? 'white' : '', fontSize: postIndex == 4 ? "17px" : ""}}>The Role of Artificial Intelligence in Modern Web Development</p>
-      </div>
       <p className='date'>{getDate(post.created_at)} - {category}</p>
       <p className='post_body'>{post.text}</p>
-      <div className='recent_comments'>
-        <p className='recent_comments_header'>Recent Comments</p>
-        {comments.length === 0 ?
-         <p className='noComments'>No comments to show.</p>
-         :
-         <div className='commentsDiv'>
-           {recentComments.map((item, index) => (
-            ( index < 1 ? <p key={index} className='recentCommentItem'>{item.commentBody}</p> : "" )
-           ))}
-         </div>
-        }
-      </div>
-      <div className='archives'>
-        <p className='archives_header'>ARCHIVES</p>
-        <p className='datePara'>December 2023</p>
-      </div>
-      <div className='category'>
-        <p className='category_header'>Category</p>
-        <p className='category_para'>{category}</p>
-      </div>
+    
       <div className='hashes'>
         {hashes.map((item, index) => (
           <div key={index} className='hash'>{item}</div>
@@ -124,6 +99,7 @@ const Blog = () => {
       <form className='commentForm' onSubmit={handleSubmit}>
         <h2 className='commentsCounter'>{comments.length}{' '}Comments</h2>
         {comments.map((item, index) => (
+          <>
           <div key={index} className='commentDiv'>
             <img src={placeHolder} alt="placeholder" className='placeHolder' />
             <div className='commentData'>
@@ -132,6 +108,8 @@ const Blog = () => {
               <p className='commentBody'>{item.commentBody}</p>
             </div>
           </div>
+          <div className='seprator'></div>
+          </>
         ))}
         <p className='leaveComment'>Leave a Comment</p>
         <textarea placeholder='Your Messgae' ref={comment} required rows={7} maxLength={1000} className='comment' />
@@ -139,6 +117,34 @@ const Blog = () => {
         <input type="email" placeholder='Email' ref={email} className='email' />
         <button type="submit"  required className='snedMessage'>Leave a comment</button>
       </form>
+      <div className='wrapper'>
+        <div className='recent_posts'>
+          <p className='recent_posts_header'>Recent Posts</p>
+          <p className='post_link' onClick={() => setPostIndex(2)} style={{color: postIndex == 2 ? 'white' : '', fontSize: postIndex == 2 ? "20px" : ""}}>The Evolution of Frontend Development</p>
+          <p className='post_link' onClick={() => setPostIndex(3)} style={{color: postIndex == 3 ? 'white' : '', fontSize: postIndex == 3 ? "20px" : ""}}>The Power of Progressive Web Apps</p>
+          <p className='post_link' onClick={() => setPostIndex(4)} style={{border: 'none', color: postIndex == 4 ? 'white' : '', fontSize: postIndex == 4 ? "17px" : ""}}>The Role of Artificial Intelligence in Modern Web Development</p>
+        </div>
+        <div className='recent_comments'>
+          <p className='recent_comments_header'>Recent Comments</p>
+          {comments.length === 0 ?
+            <p className='noComments'>No comments to show.</p>
+            :
+            <div className='commentsDiv'>
+              {recentComments.map((item, index) => (
+                ( index < 1 ? <p key={index} className='recentCommentItem'>{item.commentBody}</p> : "" )
+              ))}
+            </div>
+          }
+        </div>
+        <div className='archives'>
+          <p className='archives_header'>ARCHIVES</p>
+          <p className='datePara'>December 2023</p>
+        </div>
+        <div className='category'>
+          <p className='category_header'>Category</p>
+          <p className='category_para'>{category}</p>
+        </div>
+      </div>
       <Footer />
     </>
   )

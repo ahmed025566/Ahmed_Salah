@@ -1602,6 +1602,15 @@ a {
   align-items: center;
 }
 
+.seprator {
+  height: 1px;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  top: 30px;
+  background-color: #323232;
+}
+
 .placeHolder {
   border-radius: 50%;
   width: 90px;
@@ -2207,6 +2216,97 @@ a {
   width: 40%;
   left: 8%;
   font-size: 22px;
+ }
+
+ .intro {
+  width: 95%;
+  left: 2.5%;
+  text-align: center;
+ }
+
+ .postTitle {
+  font-size: 20px;
+  width: 90%;
+  left: 5%;
+  text-align: center;
+  top: 40px;
+  display: flex;
+  align-items: center;
+ }
+
+ .star {
+  width: 30px;
+  height: 34px;
+ }
+
+ .post_image {
+  width: 95%;
+  height: 230px;
+  left: 2.5%;
+  top: 50px;
+ }
+
+ .date {
+  left: 3.5%;
+  top: 40px;
+ }
+
+ .post_body {
+  width: 95%;
+  left: 3.5%;
+ }
+
+ .hashes {
+  width: 95%;
+  height: 100px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ 
+ .commentForm {
+  width: 95%;
+  left: 2.5%;
+  top: 40px;
+  margin-bottom: 50px;
+ }
+
+ .commentDiv {
+  width: 90%;
+ }
+
+ .placeHolder {
+  position: relative;
+  left: -20px;
+ }
+
+ .comment, .commentorName, .email {
+  width: 82%;
+ }
+
+ .snedMessage {
+  width: 88%;
+ }
+
+ .commentData {
+  width: 100%;
+ }
+
+ .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 950px;
+ }
+
+ .recent_comments, .archives, .category, .recent_posts {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 95%;
  }
 }
 
