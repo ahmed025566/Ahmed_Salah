@@ -1657,9 +1657,9 @@ a {
     width: 95%;
     height: 430px;
     margin: 0 auto;
-   
   }
 
+  
   .photo {
     position: relative;
     top: -60px;
@@ -1667,31 +1667,33 @@ a {
   }
 
  .role-intro {
-   position: relative;
-   top: 160px;
-   left: -140px;
+   position: absolute;
+   top: 270px;
+   left: 20px;
+
    font-size: 20px;
    font-weight: 500;
   }
 
   .name {
-    position: relative;
-    top: 150px;
-    left: -140px;
+    position: absolute;
+    top: 320px;
+    left: 20px;
     font-size: 43px;    
     width: 350px;
   }
 
   .some-info {
-    position: relative;
+    position: absolute;
     width: 300px;
-    top: 130px;
-    left: -145px;
+    top: 350px;
+    left: 20px;
   }
 
   .get-in {
-    top: 92.4px;
-    left: 165px;
+    position: absolute;
+    top: 370px;
+    left: 90%;
   }
 
   
@@ -1712,7 +1714,9 @@ a {
   }
 
   #get-in {
-    left: 380px;
+    position: absolute;
+    top: 204px;
+    left: 90%;
   }
 
   .show-them-projects {
@@ -1740,8 +1744,9 @@ a {
   }
 
   #projects-link {
-    left: 380px;
-    top: -80px;
+    position: absolute;
+    left: 90%;
+    top: 205px;
   }
 
 
@@ -1773,8 +1778,9 @@ a {
   }
 
   #blog-link {
-    top: -20px;
-    left: 380px;
+    position: absolute;
+    top: 205px;
+    left: 90%;
   }
 
   .services {
@@ -1784,8 +1790,9 @@ a {
   }
 
   #offers {
-    left: 380px;
-    top: 42px;
+    position: absolute;
+    left: 90%;
+    top: 205px;
   }
 
   .profiles {
@@ -1808,8 +1815,14 @@ a {
   }
 
   #get-to-profiles {
-    left: 380px;
-    top: -65px;
+    position: absolute;
+    left: 90%;
+    top: 205px;
+  }
+
+  #collaborate {
+    left: 90%;
+    top: 180px;
   }
 
   .thirdSection {
@@ -1829,7 +1842,7 @@ a {
   }
 
   .numberDiv {
-    width: 185px;
+    width: 47%;
   }
 
   .collaboration {
@@ -1840,7 +1853,7 @@ a {
 
   #star-togather {
     top: -60px;
-    left: 29px;
+    left: 2%;
   }
 
   .let_us_work {
@@ -2123,11 +2136,14 @@ a {
  }
 
  .stack {
-  left: -140px;
+  position: absolute;
+  left: 20px;
  }
 
  .projectName {
-  left: -160px;
+  position: absolute;
+  left: 20px;
+  top: 205px;
  }
 
  .main-focus {
@@ -2308,5 +2324,45 @@ a {
   top: 0;
   width: 95%;
  }
+
+ .line {
+  left: 15%;
+ }
 }
 
+@media screen and (max-width: 445px) {
+  .formHeader {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formHeader {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .formHeader {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .formHeader {
+    font-size: 27.5px;
+  }
+}
+
+
+@media screen and (max-width: 325px) {
+  .formHeader {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .formHeader {
+    font-size: 23px;
+  }
+}

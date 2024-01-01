@@ -16,6 +16,7 @@ const EarthEstates = () => {
       stack="Full Stack"
       title="Discover Your Perfect Space with EarthEstates  Where Dreams Meet Reality!"
       img={image1}
+     
       description="
        EarthEstates is a personal project that leverages cutting-edge technologies to provide
        a modern and efficient real estate platform. Built with a user-centric approach,

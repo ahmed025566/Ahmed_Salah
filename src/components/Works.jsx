@@ -20,8 +20,8 @@ const Works = () => {
         <img src={star} alt="star" />
       </p>
       <WorkCard img={GrowShot} stack="Front-End" projectName="Grow" id="firstCard" />
-      <WorkCard img={EarthEstates} stack="Full Stack" projectName="EarthEstates" top={width ? '' : '-390px'} left={width ? '-110px' : ''} id="secondCard" />
-      <WorkCard img={Lumina} stack="Full Stack" projectName="Lumina" left={width ? '-143px' : ''} top={width ? '' : '-730px'} id="thirdCard" />
+      <WorkCard img={EarthEstates} stack="Full Stack" projectName="EarthEstates" top={width ? '' : '-390px'} left={width ? '20px' : ''} id="secondCard" />
+      <WorkCard img={Lumina} stack="Full Stack" projectName="Lumina" left={width ? '20px' : ''} top={width ? '' : '-730px'} id="thirdCard" />
       <Footer top={width ? '' : '-700px'} left={width ? '' : '200px'} />
     </div>
   );
@@ -40,7 +40,7 @@ const WorkCard = ({
         <img src={img} alt="grow front" data-aos="slide-down" className="growshot" />
         <p className="stack">{stack}</p>
         <p className="projectName" style={{ left }}>{projectName}</p>
-        <BsArrowRightCircleFill className="get-in" style={{ top: -100, left: width2 ? '' : '330px' }} />
+        <BsArrowRightCircleFill className="get-in"  style={{ position: width2 ? "absolute" : "", top: width2 ?  '250px' : "-80px", left: width2 ? '90%' : '330px' }} />
       </div>
     </Link>
   );
