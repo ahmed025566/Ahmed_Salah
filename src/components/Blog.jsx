@@ -46,7 +46,7 @@ const Blog = () => {
 
   const fetchPost = async () => {
     try {
-          const response = await axios.get(`http://localhost:3000/posts/${postIndex}`);
+          const response = await axios.get(`https://portfolioabi.onrender.com/posts/${postIndex}`);
           setPost(response.data.post)
           setCategory(response.data.category)                 
           setComments(response.data.comments.reverse())
@@ -60,7 +60,7 @@ const Blog = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3000/comments", {
+    axios.post("https://portfolioabi.onrender.com/comments", {
       commentBody: comment.current.value,
       name: name.current.value,
       email: email.current.value,
