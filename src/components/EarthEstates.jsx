@@ -35,7 +35,7 @@ const EarthEstates = () => {
       image4={image5}
       next="Lumina"
       repo="https://github.com/ahmed025566/EarthEstates"
-      link="https://earthestates.onrender.com"
+      link="https://earthestates-k2w1.onrender.com/"
       top={width ? '85px' : '30px'}
     />
   </>
