@@ -46,7 +46,7 @@ const Blog = () => {
 
   const fetchPost = async () => {
     try {
-          const response = await axios.get(`https://portfolioabi.onrender.com/posts/${postIndex}`);
+          const response = await axios.get(`https://api-owkr.onrender.com/posts/${postIndex}`);
           setPost(response.data.post)
           setCategory(response.data.category)                 
           setComments(response.data.comments.reverse())
