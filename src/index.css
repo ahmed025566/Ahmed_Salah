@@ -20,7 +20,10 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family:'Lucida Sans', sans-serif;  
+  font-family:'Lucida Sans', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
