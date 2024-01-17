@@ -1015,7 +1015,7 @@ a {
   position: absolute;
   z-index: 3000;
   right: 35px;
-  top: 35px;
+  top: 30px;
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
@@ -2330,6 +2330,13 @@ a {
 
  .line {
   left: 15%;
+ }
+
+ .mobileNav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, .5);
  }
 }
 

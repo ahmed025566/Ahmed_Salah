@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import file from '../assets/Ahmed Salah.pdf';
 
 const MobileHeader = () => (
-  <nav>
+  <nav className="mobileNav">
     <Link to="/" className="logoLink"><h1 className="logo">Ahmed</h1></Link>
     <div className="menu-btn">
       <div className="btn-line" />
