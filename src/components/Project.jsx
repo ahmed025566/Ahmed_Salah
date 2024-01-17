@@ -63,11 +63,11 @@ const Project = ({
       <img src={image2} alt="screen shot 2" className="screenshot" />
       <img src={image3} alt="screen shot 3" className="screenshot" />
       <img src={image4} alt="screen shot 4" className="screenshot" />
-      <a href={repo} className="projectLink">
+      <a href={repo} target="_blank" className="projectLink">
         Github
         <FaGithub style={{ position: 'relative', top: '5px', fontSize: '25px' }} />
       </a>
-      <a href={link} className="projectLink">
+      <a href={link} target="_blank" className="projectLink">
         Live
         <MdOutlineRadar style={{
           position: 'relative', top: '5px', fontSize: '25px', marginLeft: '5px',
