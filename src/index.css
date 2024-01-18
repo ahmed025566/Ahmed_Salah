@@ -1645,6 +1645,44 @@ a {
   font-size: 18px;
 }
 
+
+.stackList {
+  width: 95%;
+  height: 200px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .1), rgba(255, 255, 255, .00));
+  border-radius: 20px;
+  position: relative;
+  top: -85px;
+  margin-bottom: 10px;
+  left: 2.5%;
+  font-size: 25px;
+  font-weight: 500;
+  color: #BCBCBC;
+}
+
+.built {
+  position: relative;
+  left: 50px;
+  top: 20px;
+  color: #e2e2e2;
+}
+
+.techs {
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tech {
+  height: 50px;
+  width: auto;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .3), rgba(255, 255, 255, .01));
+  padding: 12px 25px 2px 25px;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 480px) {
 
   body {

@@ -6,7 +6,7 @@ import Footer from './Home-components/Footer';
 import star from '../assets/star-2.png'
 
 const Project = ({
-  mainFocus, title, img, top, topLumina, projectName, stack, intro, description, image1, image2, image3, image4, repo, link, next,
+  mainFocus, title, img, top, topLumina, projectName, stack, intro, description, image1, image2, image3, image4, repo, link, next, techs, 
 }) => {
   const width = window.innerWidth <= 768;
 
@@ -58,6 +58,15 @@ const Project = ({
             <p style={{ position: 'relative', top: topLumina }}>{description}</p>
           </p>
         </div>
+      </div>
+      <div className="stackList">
+        <p className='built'>Built With : </p>
+        <div className='techs'>
+        {techs.map((item, index) => (
+          <p className='tech' key={index}>{item}</p>
+        ))}
+         
+        </div>  
       </div>
       <img src={image1} alt="screen shot 1" className="screenshot" />
       <img src={image2} alt="screen shot 2" className="screenshot" />

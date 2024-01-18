@@ -16,6 +16,7 @@ const Grow = () => {
         title="Grow is a tool to manage small business data"
         img={screenshot1}
         projectName="Grow"
+        techs = {["React", "Redux", "JavaScript", "JQuery", "HTML", "CSS"]}
         stack="Front End"
         intro="Empowering Small Businesses with Data Management and Visualization"
         image1={GrowImage}

@@ -17,6 +17,7 @@ const Lumina = () => {
       stack="Full Stack"
       title="Capture Life's Moments with Lumina – Where Inspiration Meets Expression!"
       img={image1}
+      techs = {["Ruby on Rails", "PostgreSql", "JavaScript", "JQuery", "CSS"]}
       top={width ? '85px' : '30px'}
       topLumina="-20px"
       description="Lumina stands as an immersive Instagram clone that skillfully captures the essence
